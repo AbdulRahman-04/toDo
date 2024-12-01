@@ -38,7 +38,7 @@ async function loggingInUser() {
   let userPass = read.question("enter the password: ");
 
   let check = finalDb.users.find(
-    (x) => x.username === userInp && x.userPass === userPass
+    (x) => x.username === userInp && x.password === userPass
   );
   if (check) {
     console.log("Logged in successfully!");
